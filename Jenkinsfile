@@ -10,7 +10,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'git-credentials', url: 'https://github.com/TON_USER/TON_REPO.git'
+                git credentialsId: 'git-credentials', url: 'https://github.com/DamsDamaranja/Todo-List.git'
             }
         }
 
