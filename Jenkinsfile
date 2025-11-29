@@ -10,7 +10,11 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
+<<<<<<< HEAD
                 git credentialsId: 'git-credentials', url: 'https://github.com/DamsDamaranja/Todo-List.git'
+=======
+                 git branch: 'main', credentialsId: 'git-credentials', url: 'https://github.com/DamsDamaranja/Todo-List.git'
+>>>>>>> abc1516 (jenkins modif1)
             }
         }
 
