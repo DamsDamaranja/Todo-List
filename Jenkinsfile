@@ -45,7 +45,7 @@ pipeline {
                 sh '''
                 docker stop react-container || true
                 docker rm react-container || true
-                docker run -d --name react-container -p 8080:80 $IMAGE_NAME:$IMAGE_TAG
+                docker run -d --name react-container -p 8000:80 $IMAGE_NAME:$IMAGE_TAG
                 '''
             }
         }
